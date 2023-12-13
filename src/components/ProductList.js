@@ -10,7 +10,7 @@ const ProductList = () => {
     const apiUrl = process.env.REACT_APP_API_URL;
 
     // Lógica para obtener productos desde el backend usando axios
-    axios.get(`${apiUrl}/products`)
+    axios.get(`${apiUrl}/products/list`)
       .then((response) => setProducts(response.data))
       .catch((error) => console.error('Error fetching products:', error));
   }, []);
